@@ -12,6 +12,7 @@ import SwiftUI
 
 struct HomeView: View {
     enum Tabs: String {
+        case task
         case schedule
         case contact
     }
@@ -27,11 +28,16 @@ struct HomeView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            ScheduleView(presentingAccount: $presentingAccount)
-                .tag(Tabs.schedule)
+            AudiometryLaunchView()
+                .tag(Tabs.task)
                 .tabItem {
-                    Label("SCHEDULE_TAB_TITLE", systemImage: "list.clipboard")
+                    Label("Audiometry", systemImage: "ear")
                 }
+//            ScheduleView(presentingAccount: $presentingAccount)
+//                .tag(Tabs.schedule)
+//                .tabItem {
+//                    Label("SCHEDULE_TAB_TITLE", systemImage: "list.clipboard")
+//                }
             Contacts(presentingAccount: $presentingAccount)
                 .tag(Tabs.contact)
                 .tabItem {

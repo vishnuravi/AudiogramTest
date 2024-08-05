@@ -52,6 +52,9 @@
         }
       }
     },
+    "Audiometry" : {
+
+    },
     "CLOSE" : {
       "comment" : "MARK: General",
       "localizations" : {
@@ -256,6 +259,9 @@
         }
       }
     },
+    "Launch Test" : {
+
+    },
     "LELAND_STANFORD_BIO" : {
       "localizations" : {
         "en" : {
@@ -329,6 +335,7 @@
     },
     "SCHEDULE_TAB_TITLE" : {
       "comment" : "MARK: - Schedule",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -387,6 +394,9 @@
           }
         }
       }
+    },
+    "Test your hearing!" : {
+
     },
     "WELCOME_AREA1_DESCRIPTION" : {
       "localizations" : {
