@@ -25,10 +25,12 @@ struct AudiometryTask: View {
     
     var body: some View {
         ORKOrderedTaskView(tasks: audiometryTask) { result in
-            guard case let .completed(result) = result else {
+            guard case let .completed(taskResult) = result else {
                 return
             }
+            
             self.showingTask = false
+            
         }
     }
 }
